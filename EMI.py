@@ -1,0 +1,5 @@
+Principal=float(input('Enter your loan amount'))
+RateOfInterest=float(input('Enter the rate of interest per annum.'))
+Tenure=int(input('Enter the loan tenure in months'))
+EMI = (Principal * RateOfInterest/1200)*((1+RateOfInterest/1200) **Tenure) / (((1+RateOfInterest/1200) **Tenure)-1)
+print(EMI)
