@@ -1,0 +1,24 @@
+# Question 3 - Marks of a student are given in a file, calculate the average marks.
+import pandas as pd
+
+df = pd.read_excel (r'testfile.xlsx')
+print (df)
+
+print('mean is ' + str(df["marks"].mean()))
+
+#Question 4 - Names are given in a file, check whether a particular name is present.
+
+name=input("Enter the name.")
+output= name in df['name'].values
+print(output)
+if output==True:
+    print("name exist")
+else:
+    print("name doesn't exist")
+
+
+
+#for row wise output--extra--just checking 'isin'
+#print(df['name'].isin(['aaa','bbb']))
+
+
